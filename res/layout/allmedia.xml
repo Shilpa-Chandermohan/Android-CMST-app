@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cmstWhite"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="88.8" >
+
+        <GridView
+            android:id="@+id/allMediaGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:horizontalSpacing="4dp"
+            android:numColumns="auto_fit"
+            android:paddingTop="5dp"
+            android:scrollbars="none"
+            android:verticalSpacing="4dp"
+            tools:listitem="@layout/gridview_item" >
+        </GridView>
+
+        <ImageView
+            android:id="@+id/allMediaLoader"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loading" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottomContainerSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/cmst_gray_line"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+    </LinearLayout>
+
+    <include
+        android:id="@+id/llBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        layout="@layout/footer"
+        android:background="#fff"
+        android:baselineAligned="false"
+        android:orientation="vertical" />
+
+</LinearLayout>

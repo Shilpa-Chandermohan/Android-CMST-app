@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- CMST font size -->
+    <dimen name="cmst_splash_font">15sp</dimen>
+    <dimen name="cmst_album_title">50sp</dimen>
+    <dimen name="cmst_title_font">20sp</dimen>
+    <dimen name="cmst_padding_medium">8dp</dimen>
+    <dimen name="title_medium">20sp</dimen>
+    <dimen name="cmst_meta_title">20sp</dimen>
+    <dimen name="cmst_meta_subtitle">15sp</dimen>
+    	<dimen name="cmst_splash_font_Tab">24sp</dimen>
+
+</resources>

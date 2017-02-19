@@ -1,0 +1,48 @@
+<resources>
+
+    <style name="AppTheme" parent="android:style/Theme.Holo.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="cmstTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="noAnimTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="scrollbar_shape_style" parent="android:Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/album_sort_icon</item>
+        <item name="android:scrollbarSize">2dp</item>
+        <item name="android:scrollbarFadeDuration">2000</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/cmstBlue</item>
+    </style>
+
+    <color name="cmstBlue">#5500C3FF</color>
+    <color name="cmstMemoryBlue">#00C3FF</color>
+    <color name="cmstWhite">#FFFFFF</color>
+    <color name="cmstTextOld">#000000</color>
+    <color name="cmstSplash">#656766</color>
+    <color name="cmstGray">#A4A7AA</color>
+    <color name="cmst_gray_line">#EEEEEE</color>
+    <color name="gallery_pick">#3E90DDF7</color>
+    <color name="cmstSlideshow">#1E1E1E</color>
+    <color name="cmstSlide_transparent">#FF000000</color>
+    <color name="cmstInfo_transparent">#AA000000</color>
+    <color name="cmstText">#1E1E1E</color>
+    <color name="cmstAlbumPressed">#99E7FF</color>
+    <color name="cmstShadowBlack">#22000000</color>
+	<color name="cmstShadowWhite">#D9FFFFFF</color>
+</resources>

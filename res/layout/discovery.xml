@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_wraper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cmstWhite"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <!-- Discovery body section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/listLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/listCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40" >
+
+            <ListView
+                android:id="@+id/bonjourListview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:clipToPadding="false"
+                android:divider="@drawable/discovery_separator"
+                android:fastScrollEnabled="false"
+                android:padding="2dip"
+                android:scrollbars="none" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/bonjourContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/bonjourLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:interpolator="@android:anim/linear_interpolator"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+
+                <com.cmst.cmstapp.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dip"
+                    android:text="@string/bonjourSearching"
+                    android:textSize="@dimen/title_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bonjourErrorCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/bonjourLoadingerr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:interpolator="@android:anim/linear_interpolator"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+
+                <com.cmst.cmstapp.CustomTextView
+                    android:id="@+id/discoveryError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dip"
+                    android:text="No CMST found"
+                    android:textSize="@dimen/title_medium" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/listRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Discovery footer section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" >
+
+        <ImageView
+            android:id="@+id/refreshText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:src="@drawable/btn_pulldown"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>
